@@ -23,3 +23,13 @@ $ pip3 install pipenv
 
 (project directory name) (your user name)$ pipenv install django
 ```
+
+## If program say 'No module named blog'
+
+```
+INSTALLED_APPS = [
+...
+'django.contrib.staticfiles',
+- 'blog,apps.BlogConfig',
++ 'djangogirls.blog'
+```
