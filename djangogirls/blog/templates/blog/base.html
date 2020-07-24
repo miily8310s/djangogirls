@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Miruo's blog</title>
+  </head>
+  <body>
+    <h1 class="font-serif text-4xl p-2 text-white bg-teal-800">
+      <a href="/">Django Girls Blog</a>
+    </h1>
+    <a href="{% url 'post_new' %}" class="top-menu"><span class=""></span></a>
+    {% block content %} {% endblock %}
+  </body>
+</html>
